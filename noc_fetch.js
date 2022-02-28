@@ -1,5 +1,5 @@
 //2022, pinkromeo18, MIT.
-window._fetch=window.fetch;
+if(!window._fetch) window._fetch=window.fetch;
 var noc_fetch_debug =document.querySelector('script[src$="noc_fetch.js"')?false:true;
 window.fetch = function __fetch__(u,o){
   o=Object.assign({},o, {cache:'no-cache'} )
