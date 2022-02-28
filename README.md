@@ -2,10 +2,16 @@
 noc_fetch.js mean "no-cache" fetch
 
 # need fastest fastest load
+
+right
 ```
 <link rel="preload" href="https://pinkromeo18.github.io/noc_fetch/noc_fetch.js" as="script">
 <script src="https://pinkromeo18.github.io/noc_fetch/noc_fetch.js" ></script>
-<!-- <script src="https://pinkromeo18.github.io/noc_fetch/noc_fetch.js?debug=true" ></script> -->
+```
+debug
+```
+<link rel="preload" href="https://pinkromeo18.github.io/noc_fetch/noc_fetch.js" as="script">
+<script src="https://pinkromeo18.github.io/noc_fetch/noc_fetch.js?debug=true" ></script>
 ```
 
 ```js
