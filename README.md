@@ -41,10 +41,11 @@ window.getparam = function getparam(key){   //<--- util getparam
 # repo_api
 ```
 <script src="https://pinkromeo18.github.io/noc_fetch/noc_fetch.js" ></script>
-<script src="https://pinkromeo18.github.io/noc_fetch/repo_api.js" >
+<script src="https://pinkromeo18.github.io/noc_fetch/repo_api.js" ></script>
+<script>
 window.api = (function(){
   var opt ={}
-  opt.u ='/repos/pinkromeo18/meme/contents/'
+  opt.u ='/repos/pinkromeo18/flyme/contents/'
   opt.t1 =""
   opt.t2 =""  
   return repo_api(opt);
