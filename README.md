@@ -8,7 +8,7 @@ noc_fetch.js mean "no-cache" fetch
 ```
 
 ```js
-//pinkromeo18, 2022, MIT.
+//2022, pinkromeo18, MIT.
 window._fetch=window.fetch;
 window.fetch = function __fetch__(u,o){
   o=Object.assign({},o, {cache:'no-cache'} )
