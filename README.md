@@ -29,6 +29,7 @@ window.setparam = function setparam(url,opt){
   .map(key=>{ a.searchParams.set(key,opt[key]) })
   return a.toString();
 }
+
 //getparam util
 window.getparam = function getparam(key){
   var p = new URL(location.href).searchParams;
