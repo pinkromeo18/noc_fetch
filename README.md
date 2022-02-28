@@ -22,16 +22,14 @@ window.fetch = function __fetch__(u,o){
   return window._fetch(u,o);
 }
 
-//setpram util
-window.setparam = function setparam(url,opt){
+window.setparam = function setparam(url,opt){  //<--- util setparam
   var a = new URL(url);
   Object.keys(opt)
   .map(key=>{ a.searchParams.set(key,opt[key]) })
   return a.toString();
 }
 
-//getparam util
-window.getparam = function getparam(key){
+window.getparam = function getparam(key){   //<--- util getparam
   var p = new URL(location.href).searchParams;
   var value = p.get(key)|| '';
   return value;
