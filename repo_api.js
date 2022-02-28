@@ -191,12 +191,12 @@ console.log(theURL.toString());
       content = await o.decode(content)
       var lines = (content.match(/\n/g)||[]).length;
       var title = content.split('\n').slice(0,1).join('')
-      var date_jp = jpTime(timestamp)
+      var time = jpTime(timestamp)
       //
       return {
         name,sha,content,download_url,
         date,timestamp,
-        lines,title,date_jp
+        lines,title,time
       }    
 
     }
