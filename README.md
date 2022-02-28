@@ -39,3 +39,16 @@ window.api = (function(){
 </script>
 
 ```
+```
+repo_api v1.0
+[
+  "encode",
+  "decode",
+  "timestamp",
+  "get",
+  "put",
+  "summary",
+  "data",
+  "upimage"
+]
+```
