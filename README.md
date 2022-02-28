@@ -22,3 +22,21 @@ window.fetch = function __fetch__(u,o){
   return window._fetch(u,o);
 }
 ```
+
+
+
+# repo_api
+```
+<script src="https://pinkromeo18.github.io/noc_fetch/noc_fetch.js" ></script>
+<script src="https://pinkromeo18.github.io/noc_fetch/repo_api.js" >
+ var api = (function(){
+  var opt ={}
+  opt.t1 =''
+  opt.t2 =''
+  opt.u ='/repos/pinkromeo18/meme/contents/'
+  
+  return repo_api(opt);
+ }());  
+</script>
+
+```
