@@ -67,6 +67,7 @@ console.log(theURL.toString());
   }
 
   function base(opt){
+    opt.t1 = opt.t1||'',opt.t2=opt.t2||'';
 
     const authorization ="token "+opt.t1+opt.t2
     const accept = "application/vnd.github.v3+json"
