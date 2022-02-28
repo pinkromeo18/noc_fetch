@@ -45,8 +45,8 @@ window.getparam = function getparam(key){   //<--- util getparam
 window.api = (function(){
   var opt ={}
   opt.u ='/repos/pinkromeo18/meme/contents/'
-  opt.t1 ="ghp_WjFtZHMWbe2u3v4"
-  opt.t2 ="Dhr5ziHCR2ufMNi37mp3f"  
+  opt.t1 =""
+  opt.t2 =""  
   return repo_api(opt);
 }());  
 </script>
