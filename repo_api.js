@@ -70,7 +70,7 @@ console.log(theURL.toString());
     opt.t1 = opt.t1||'',opt.t2=opt.t2||'';
     var token = opt.t1 + opt.t2; 
     token = token.replace('.',''); //<---------------- dot mask replace
-	  console.log("token":token);
+	  console.log("token:" + token);
 
     const authorization ="token "+token;
     const accept = "application/vnd.github.v3+json"
