@@ -29,6 +29,13 @@ window.fetch = function __fetch__(u,o){
 ```
 <script src="https://pinkromeo18.github.io/noc_fetch/noc_fetch.js" ></script>
 <script src="https://pinkromeo18.github.io/noc_fetch/repo_api.js" >
+window.api = (function(){
+  var opt ={}
+  opt.u ='/repos/pinkromeo18/meme/contents/'
+  opt.t1 ="ghp_WjFtZHMWbe2u3v4"
+  opt.t2 ="Dhr5ziHCR2ufMNi37mp3f"  
+  return repo_api(opt);
+}());  
 </script>
 
 ```
