@@ -21,6 +21,20 @@ window.fetch = function __fetch__(u,o){
   if(noc_fetch_debug) console.log(o);
   return window._fetch(u,o);
 }
+
+//setpram util
+window.setparam = function setparam(url,opt){
+  var a = new URL(url);
+  Object.keys(opt)
+  .map(key=>{ a.searchParams.set(key,opt[key]) })
+  return a.toString();
+}
+//getparam util
+window.getparam = function getparam(key){
+  var p = new URL(location.href).searchParams;
+  var value = p.get(key)|| '';
+  return value;
+}
 ```
 
 
