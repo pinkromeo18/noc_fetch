@@ -19,7 +19,12 @@ var noc_fetch_debug =document.querySelector('script[src$="noc_fetch.js"')?false:
 window.fetch = function __fetch__(u,o){
   o=Object.assign({},o, {cache:'no-cache'} )
   if(noc_fetch_debug) console.log(o);
-  return window._fetch(u,o);
+  return window._fetch(u,o).then(support_catch)
+  ;  
+  function support_catch(res) {  //<---- support .catch
+    if (res.ok) return res;
+    else throw new Error(res.statusText);
+  }
 }
 
 window.setparam = function setparam(url,opt){  //<--- util setparam
