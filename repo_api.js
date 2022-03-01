@@ -104,7 +104,7 @@ console.log(theURL.toString());
       .then(d=>d.json())
       .catch(e=>void 0)
       //console.log(res.length)
-      if(!res || res.length==0) return res
+      if(!res) return res
       //
       //dont use sha
       //var sha = res[0].sha
