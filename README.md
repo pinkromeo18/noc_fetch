@@ -16,8 +16,10 @@ debug
 ```js
 //2022, pinkromeo18, MIT.
 if(!window._fetch) window._fetch=window.fetch;  //<-- support multi load
+//window.noc_fetch_debug = void 0;//<-- support debug
 window.fetch = function __fetch__(u,o){
   o=Object.assign({},o, {cache:'no-cache'} )
+  if(window.noc_fetch_debug) console.log(o);
   return window._fetch(u,o).then(support_catch)
   ;  
   function support_catch(res) {  //<---- support .catch
@@ -39,7 +41,6 @@ window.getparam = function getparam(key){   //<--- util getparam
   return value;
 }
 ```
-
 
 
 # repo_api
